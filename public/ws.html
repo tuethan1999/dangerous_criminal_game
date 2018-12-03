@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <div id="demo">
+      <button v-on:click="play">
+        Play
+      </button>
+      <h1> YOU ARE THE {{ptype}}</h1>
+      <h2> Room #: {{room}} </h2>
+      <p> count: {{count}}</p>
+      <p> received: {{received}}</p>
+    </div>
+  </body>
+  <script src="ws.js"></script>
+</html>
